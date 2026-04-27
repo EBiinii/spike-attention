@@ -79,7 +79,9 @@ python att_sgsls.py
 5. Outputs
    - Evaluation metrics and visualizations are automatically generated after training
    - Results are saved in:
-```./checkpoint/att-sgsls-30/```
+```
+./checkpoint/att-sgsls-30/
+```
    - Including:
      - Model checkpoint (.pth)
      - Learning curve
