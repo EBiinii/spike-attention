@@ -1,5 +1,5 @@
-‎# Title
-Hybrid spiking neural network with self-attention for skin lesion severity classification
+‎
+# Hybrid spiking neural network with self-attention for skin lesion severity classification
 
 ‎Description – An overview of the code/dataset.
 ‎Dataset Information.
