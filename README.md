@@ -64,7 +64,9 @@ data/
       - ./data/train/
       - ./data/test/
 2. Install dependencies
-   - pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 3. Train model
 ```
 python att_sgsls.py
