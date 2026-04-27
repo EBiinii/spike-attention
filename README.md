@@ -118,5 +118,7 @@ python att_sgsls.py
 ## License
 **MIT license**
 
+---
+
 #### Note
 This work builds upon established architectures and presents a novel integration of spike-based attention mechanisms with task-specific fine-tuning.
