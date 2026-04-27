@@ -37,7 +37,7 @@ data/
 
 (This implementation is designed for a custom 5-class classification task)
 
-**Note: The dataset collected under DRB approval and does not contain directly identifiable personal information. Due to institutional data governance policies, the dataset is available upon reasonable request for approved academic research. To support reproducibility, we release the full codebase, preprocessing pipeline, and data format specifications, and demonstrate that the proposed method can be applied to other publicly available datasets.
+**Note:** The dataset collected under DRB approval and does not contain directly identifiable personal information. Due to institutional data governance policies, the dataset is available upon reasonable request for approved academic research. To support reproducibility, we release the full codebase, preprocessing pipeline, and data format specifications, and demonstrate that the proposed method can be applied to other publicly available datasets.
 
 ## Code Information
 ### Main Components
