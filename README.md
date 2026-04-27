@@ -1,4 +1,3 @@
-‎
 # Spike-Attention
 > Hybrid spiking neural network with self-attention for skin lesion severity classification
 
@@ -20,12 +19,13 @@ The goal is to improve feature representation and robustness by combining:
 
 ## Dataset Information
 Datasets are not included and must be prepared manually.
-```data/
+```
+data/
 ├── train/
  │ ├── class0/
  │ ├── class1/
  │ └── ...
- ├── test/
+├── test/
  │ ├── class0/
  │ ├── class1/
  │ └── ...
@@ -45,7 +45,7 @@ Datasets are not included and must be prepared manually.
      - Temporal simulation over multiple steps
    - ATT
      - Global attention (channel-wise)
-     - Multi-scal spatial attention
+     - Multi-scale spatial attention
      - Deformable convolution
      - Spike neuron (LIF)
    - DeformableConv2d
@@ -66,17 +66,20 @@ Datasets are not included and must be prepared manually.
 2. Install dependencies
    - pip install -r requirements.txt
 3. Train model
-```python att-sgsls.py```
-4. Key parameters
+```
+python att_sgsls.py
+```
+5. Key parameters
  - Epochs: 50
  - Batch size: 8
  - steps: 30
  - beta: 0.5  
 5. Outputs
+   - Evaluation metrics and visualizations are automatically generated after training
    - Results are saved in:
 ```./checkpoint/att-sgsls-30/```
    - Including:
-     - Model chechpoint (.pth)
+     - Model checkpoint (.pth)
      - Learning curve
      - Confusion matrix
      - ROC curve
@@ -84,7 +87,7 @@ Datasets are not included and must be prepared manually.
 
 ## Requirements
 - Python 3.8+
-- Pytorch
+- PyTorch
 - torchvision
 - timm
 - snntorch
@@ -110,3 +113,6 @@ Datasets are not included and must be prepared manually.
 
 ## License
 **MIT license**
+
+#### Note
+This work builds upon established architectures and presents a novel integration of spike-based attention mechanisms with task-specific fine-tuning.
