@@ -1,7 +1,7 @@
 # Spike-Attention
 > Hybrid spiking neural network with self-attention for skin lesion severity classification
 
-## Overview
+## Abstract
 This repository implements a Spiking Neural Network (SNN)-based image classification framework with a custom attention mechanism.
 
 The model integrates:
@@ -16,6 +16,65 @@ The goal is to improve feature representation and robustness by combining:
 - spike driven computation
 
 ---
+
+## Framework
+
+### Architecture Overview
+
+The proposed **Spike-Attention** framework combines a convolutional backbone, spike-based attention mechanisms, and temporal neural dynamics for skin lesion severity classification.
+
+```text
+Input Image
+      │
+      ▼
+ ResNet Backbone
+      │
+      ▼
+ Spike-Attention Module
+ ├─ Global Channel Attention
+ ├─ Multi-Scale Spatial Attention
+ ├─ Deformable Convolution
+ └─ LIF Spiking Neurons
+      │
+      ▼
+ Temporal Spike Accumulation
+      │
+      ▼
+ Fully Connected Layer
+      │
+      ▼
+ Severity Classification
+```
+
+The network first extracts visual features using a modified ResNet backbone. The extracted feature maps are then refined through the proposed **Spike-Attention (ATT)** module, which integrates:
+
+- Global channel attention
+- Multi-scale spatial attention
+- Deformable convolution
+- Leaky Integrate-and-Fire (LIF) neurons
+
+The attention-enhanced features are propagated through multiple simulation steps, allowing temporal information to accumulate over time. The aggregated spike representations are then passed to a fully connected layer for final classification.
+
+### Key Components
+
+| Component | Description |
+|------------|-------------|
+| ResNet Backbone | Extracts hierarchical visual features |
+| Global Attention | Captures channel-wise contextual information |
+| Spatial Attention | Emphasizes informative lesion regions |
+| Deformable Convolution | Adapts receptive fields to irregular lesion structures |
+| LIF Neurons | Introduce spike-based temporal dynamics |
+| Temporal Accumulation | Aggregates spike responses across multiple time steps |
+
+### Processing Pipeline
+
+1. Input image preprocessing
+2. Feature extraction using ResNet backbone
+3. Feature refinement through Spike-Attention modules
+4. Spike generation via LIF neurons
+5. Temporal accumulation over multiple simulation steps
+6. Final classification through a fully connected layer
+
 
 ## Dataset Information
 Datasets are not included and must be prepared manually.
